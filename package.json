@@ -1,5 +1,6 @@
 {
-  "name": "roc-icon",
+  "name": "@roc/icon",
+  "libName": "roc-icon",
   "version": "1.0.0",
   "description": "roc-icon",
   "type": "module",

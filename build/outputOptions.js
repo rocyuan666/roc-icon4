@@ -15,7 +15,7 @@ export const umdOutputOptions = {
   globals: {
     vue: 'Vue',
   },
-  file: `dist/${pkg.name}.umd.js`,
+  file: `dist/${pkg.libName}.umd.js`,
   compact: true,
   banner,
 }
@@ -26,7 +26,7 @@ export const umdOutputOptions = {
  */
 export const umdMinOutputOptions = {
   ...umdOutputOptions,
-  file: `dist/${pkg.name}.umd.min.js`,
+  file: `dist/${pkg.libName}.umd.min.js`,
   plugins: [terser()],
 }
 
@@ -36,7 +36,7 @@ export const umdMinOutputOptions = {
  */
 export const esOutputOptions = {
   format: 'es',
-  file: `dist/${pkg.name}.es.js`,
+  file: `dist/${pkg.libName}.es.js`,
   compact: true,
   banner,
 }
