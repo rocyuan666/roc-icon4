@@ -8,10 +8,10 @@
 
 
 var script = {
-  __name: 'RocCpn',
+  __name: 'RocIcon',
   setup(__props) {
 
-const message = vue.ref('roc-cli-rollup-vue-template');
+const message = vue.ref('roc-icon');
 
 return (_ctx, _cache) => {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, [
@@ -20,4 +20,4 @@ return (_ctx, _cache) => {
 }
 }
 
-};script.__file = "src/components/RocCpn.vue";exports.RocCpn=script;}));
+};script.__file = "src/components/RocIcon/RocIcon.vue";exports.RocIcon=script;}));

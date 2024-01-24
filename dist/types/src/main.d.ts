@@ -1,2 +1,2 @@
-import RocCpn from './components/RocCpn.vue';
-export { RocCpn };
+import RocIcon from './components/RocIcon/RocIcon.vue';
+export { RocIcon };

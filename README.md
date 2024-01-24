@@ -1,4 +1,4 @@
-# roc-cli-rollup-vue-template
+# roc-icon
 
 roc 脚手架 rollup 开发js库项目模板
 

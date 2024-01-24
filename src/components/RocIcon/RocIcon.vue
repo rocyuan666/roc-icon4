@@ -7,7 +7,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const message = ref('roc-cli-rollup-vue-template')
+const message = ref('roc-icon')
 </script>
 
 <style lang="scss">
