@@ -10,6 +10,11 @@
   "unpkg": "dist/roc-icon.umd.js",
   "jsdelivr": "dist/roc-icon.umd.js",
   "types": "dist/types/main.d.ts",
+  "homepage": "https://github.com/rocyuan666/roc-icon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocyuan666/roc-icon.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "rimraf dist && node build/index.js",
