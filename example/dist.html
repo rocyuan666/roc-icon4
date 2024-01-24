@@ -3,24 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="../dist/assets/css/roc.css">
+  <link rel="stylesheet" href="../dist/assets/css/roc-icon.css">
 </head>
 <body>
 <div id="app">
-  <roc-cpn></roc-cpn>
+  <roc-icon name="user"></roc-icon>
 </div>
 <script src="../node_modules/vue/dist/vue.global.prod.js"></script>
 <script src="../dist/roc-icon.umd.min.js"></script>
 <script>
-  const obj = {
-    data() {
-      return {};
-    },
-    components: {
-      "roc-cpn": Roc.RocIcon,
-    }
-  };
-  Vue.createApp(obj).mount("#app");
+  const obj = {};
+  const app = Vue.createApp(obj);
+  app.use(RocIcon)
+  app.mount("#app");
 </script>
 </body>
 </html>

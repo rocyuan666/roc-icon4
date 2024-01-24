@@ -1,19 +1,42 @@
 <template>
-  <div class="roc-cpn">
-    <span>{{ message }}</span>
-  </div>
+  <span class="roc-icon fa" :class="classOptions" :style="styleOptions"></span>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const message = ref('roc-icon')
+<script lang="ts">
+export default {
+  name: 'RocIcon',
+}
 </script>
 
-<style lang="scss">
-.roc-cpn {
-  span {
-    color: #f00;
-  }
+<script setup lang="ts">
+const props = withDefaults(
+  defineProps<{
+    name: string
+    size?: number | string
+    color?: string
+    rotate?: 0 | 90 | 180 | 270 | '0' | '90' | '180' | '270'
+    animationType?: '' | 'spin' | 'pulse'
+  }>(),
+  {
+    size: 16,
+    color: '#606266',
+    rotate: 0,
+    animationType: '',
+  },
+)
+
+const classOptions = {
+  [`fa-${props.name}`]: true,
+  [`fa-rotate-${props.rotate}`]: !!props.rotate,
+  [`fa-${props.animationType}`]: !!props.animationType,
 }
+const styleOptions = {
+  fontSize: String(props.size).includes('px') ? props.size : `${props.size}px`,
+  color: props.color,
+}
+</script>
+
+<style lang="scss" scoped>
+$fa-font-path: 'styles/fonts';
+@import 'styles/scss/font-awesome.scss';
 </style>

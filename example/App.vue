@@ -1,12 +1,5 @@
 <template>
-  <RocIcon></RocIcon>
+  <roc-icon name="address-book-o" rotate="180" animation-type="spin" size="80"></roc-icon>
 </template>
 
-<script setup lang="ts">
-// 打包前
-import { RocIcon } from '../src/main'
-
-// 打包后
-// import { RocIcon } from '../dist/roc-icon.es'
-// import '../dist/assets/css/roc.css'
-</script>
+<script setup lang="ts"></script>
