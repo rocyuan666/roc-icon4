@@ -1,8 +1,9 @@
 {
-  "name": "@roc/icon",
+  "name": "roc-icon4",
   "libName": "roc-icon",
-  "version": "1.0.0",
-  "description": "roc-icon",
+  "version": "1.0.1",
+  "description": "roc-icon4 基于 fontawesome4.7.0图标库",
+  "keywords": ["rocyuan666", "rocyuan", "roc", "roc-icon", "roc-icon4", "vue-icon", "vue3"],
   "type": "module",
   "main": "dist/roc-icon.es.js",
   "module": "dist/roc-icon.es.js",
@@ -11,7 +12,7 @@
   "unpkg": "dist/roc-icon.umd.js",
   "jsdelivr": "dist/roc-icon.umd.js",
   "types": "dist/types/main.d.ts",
-  "homepage": "https://rocyuan666.gitee.io/uniapp/roc-icon.html",
+  "homepage": "https://rocyuan666.gitee.io/doc/roc-icon.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rocyuan666/roc-icon.git"
@@ -21,7 +22,6 @@
     "build": "rimraf dist && node build/index.js",
     "format": "prettier --write src"
   },
-  "keywords": [],
   "author": "rocyuan",
   "license": "MIT",
   "devDependencies": {
