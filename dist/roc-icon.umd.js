@@ -1,5 +1,5 @@
 /**
- * roc-icon v1.0.4
+ * roc-icon v1.0.5
  * (c) 2020-2024 rocyuan
  * Email: rocyuan666@163.com
  * Released under the MIT License.
