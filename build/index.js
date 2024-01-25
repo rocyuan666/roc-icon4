@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import fs from 'node:fs'
 import path from 'node:path'
 import { rollup } from 'rollup'
@@ -10,6 +12,8 @@ import scss from 'rollup-plugin-scss'
 import copy from 'rollup-plugin-copy'
 import { umdOutputOptions, umdMinOutputOptions, esOutputOptions } from './outputOptions.js'
 import { fileURLToPath } from 'node:url'
+import { EOL } from 'node:os'
+import { banner } from './banner.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -39,11 +43,25 @@ rollup({
     bundle.write(umdOutputOptions),
     bundle.write(umdMinOutputOptions),
     bundle.write(esOutputOptions),
-  ]).then(() => {
+  ]).then((result) => {
     handleCssFontPath()
-    console.log('打包成功')
+    handleMinBanner()
+    console.log('打包成功，已打包：')
+    result.forEach((item) => {
+      console.log(item.output[0]?.fileName)
+    })
   })
 })
+
+/**
+ * 处理 min 版本的 banner
+ */
+function handleMinBanner() {
+  const minPath = path.resolve(__dirname, '../dist/roc-icon.umd.min.js')
+  const minJs = fs.readFileSync(minPath)
+  const newMinJs = `${banner}${EOL}${minJs}`
+  fs.writeFileSync(minPath, newMinJs)
+}
 
 /**
  * css 字体路径处理
