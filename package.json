@@ -1,7 +1,7 @@
 {
   "name": "roc-icon4",
   "libName": "roc-icon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "roc-icon4 基于 fontawesome4.7.0图标库",
   "keywords": ["rocyuan666", "rocyuan", "roc", "roc-icon", "roc-icon4", "vue-icon", "vue3"],
   "type": "module",
@@ -14,7 +14,7 @@
   "homepage": "https://rocyuan666.gitee.io/doc/roc-icon.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rocyuan666/roc-icon.git"
+    "url": "git+https://github.com/rocyuan666/roc-icon4.git"
   },
   "scripts": {
     "dev": "vite",
