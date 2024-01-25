@@ -27,7 +27,7 @@ rollup({
     typescript({ tsconfig: false, experimentalDecorators: true, module: 'es2015' }),
     nodeResolve(),
     commonjs(),
-    scss({ fileName: 'assets/css/roc-icon.css' }),
+    scss({ fileName: 'assets/css/index.css' }),
     vuePlugin({
       css: false,
     }),
@@ -67,7 +67,7 @@ function handleMinBanner() {
  * css 字体路径处理
  */
 function handleCssFontPath() {
-  const cssPath = path.resolve(__dirname, '../dist/assets/css/roc-icon.css')
+  const cssPath = path.resolve(__dirname, '../dist/assets/css/index.css')
   const rocIconCss = fs.readFileSync(cssPath)
   const newRocIconCss = rocIconCss.toString().replace(/styles\/fonts/g, '../fonts')
   fs.writeFileSync(cssPath, newRocIconCss)
