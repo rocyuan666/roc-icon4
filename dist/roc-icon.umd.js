@@ -1,5 +1,5 @@
 /**
- * roc-icon v1.0.3
+ * roc-icon v1.0.4
  * (c) 2020-2024 rocyuan
  * Email: rocyuan666@163.com
  * Released under the MIT License.
@@ -48,9 +48,9 @@ var script = /*#__PURE__*/ vue.defineComponent(__assign(__assign({}, __default__
         var _a;
         var props = __props;
         var classOptions = (_a = {},
-            _a["fa-".concat(props.name)] = true,
-            _a["fa-rotate-".concat(props.rotate)] = !!props.rotate,
-            _a["fa-".concat(props.animationType)] = !!props.animationType,
+            _a["fa4-".concat(props.name)] = true,
+            _a["fa4-rotate-".concat(props.rotate)] = !!props.rotate,
+            _a["fa4-".concat(props.animationType)] = !!props.animationType,
             _a);
         var styleOptions = {
             fontSize: String(props.size).includes('px') ? props.size : "".concat(props.size, "px"),
@@ -58,7 +58,7 @@ var script = /*#__PURE__*/ vue.defineComponent(__assign(__assign({}, __default__
         };
         return function (_ctx, _cache) {
             return (vue.openBlock(), vue.createElementBlock("span", {
-                class: vue.normalizeClass(["roc-icon fa", classOptions]),
+                class: vue.normalizeClass(["roc-icon fa4", classOptions]),
                 style: styleOptions
             }));
         };

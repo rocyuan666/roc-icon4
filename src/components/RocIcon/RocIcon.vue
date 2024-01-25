@@ -1,5 +1,5 @@
 <template>
-  <span class="roc-icon fa" :class="classOptions" :style="styleOptions"></span>
+  <span class="roc-icon fa4" :class="classOptions" :style="styleOptions"></span>
 </template>
 
 <script lang="ts">
@@ -26,9 +26,9 @@ const props = withDefaults(
 )
 
 const classOptions = {
-  [`fa-${props.name}`]: true,
-  [`fa-rotate-${props.rotate}`]: !!props.rotate,
-  [`fa-${props.animationType}`]: !!props.animationType,
+  [`fa4-${props.name}`]: true,
+  [`fa4-rotate-${props.rotate}`]: !!props.rotate,
+  [`fa4-${props.animationType}`]: !!props.animationType,
 }
 const styleOptions = {
   fontSize: String(props.size).includes('px') ? props.size : `${props.size}px`,
