@@ -8,9 +8,9 @@
   "main": "dist/roc-icon.es.js",
   "module": "dist/roc-icon.es.js",
   "umdName": "RocIcon",
-  "browser": "dist/roc-icon.umd.js",
-  "unpkg": "dist/roc-icon.umd.js",
-  "jsdelivr": "dist/roc-icon.umd.js",
+  "browser": "dist/roc-icon.umd.min.js",
+  "unpkg": "dist/roc-icon.umd.min.js",
+  "jsdelivr": "dist/roc-icon.umd.min.js",
   "homepage": "https://rocyuan666.gitee.io/doc/roc-icon.html",
   "repository": {
     "type": "git",
